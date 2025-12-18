@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knife Spin Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="main-menu">
+        <h1>KNIFE SPIN</h1>
+        <div class="menu-buttons">
+            <button id="btn-single">Single Player (Sandbox)</button>
+            <button id="btn-multi">Battle Royale (Vs AI)</button>
+        </div>
+        <p class="credits">Collect 100 knives to upgrade!</p>
+    </div>
+
+    <div id="ui-layer" class="hidden">
+        <div id="score-board">
+            <div>Tier: <span id="tier-display">Yellow</span></div>
+            <div>Knives: <span id="knife-count">1</span>/100</div>
+        </div>
+        <div id="message-area"></div>
+        <button id="upgrade-btn" class="hidden">UPGRADE!</button>
+    </div>
+    <canvas id="game-canvas"></canvas>
+    <script src="game.js"></script>
+</body>
+</html>
